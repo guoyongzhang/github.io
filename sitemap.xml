@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://guoyongzhang.github.io/docs/</loc>
-    <lastmod>2021-07-20T11:56:09-04:00</lastmod>
+    <loc>/docs/</loc>
+    <lastmod>2021-07-20T13:19:39-04:00</lastmod>
   </url><url>
-    <loc>https://guoyongzhang.github.io/search/</loc>
+    <loc>/search/</loc>
     <lastmod>2021-07-20T11:25:44-04:00</lastmod>
   </url><url>
-    <loc>https://guoyongzhang.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2021-07-20T11:25:44-04:00</lastmod>
   </url>
 </urlset>
