@@ -4,6 +4,7 @@ title = "Verrazzano Enterprise Container Platform"
 configDir = "config"
 canonifyURLs = "true"
 relativeURLs = "true"
+baseURL = ""
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["hugo-dynamic-tabs", "docsy"]
@@ -30,18 +31,17 @@ quality = 75
 anchor = "smart"
 
 [[params.versions]]
-  version = "latest"
-  url = ""
+version = "latest"
+url = "https://guoyongzhang.github.io/github.io/"
 
 [[params.versions]]
-  version = "v0.17.2"
-  url = "v0.17.2"
+version = "v0.17.2"
+url = "https://guoyongzhang.github.io/github.io/v0.17.2"
 
 [[params.versions]]
-  version = "v0.17.1"
-  url = "v0.17.1"
+version = "v0.17.1"
+url = "https://guoyongzhang.github.io/github.io/v0.17.1"
 
 [[params.versions]]
-  version = "v0.17.0"
-  url = "v0.17.0"
-
+version = "v0.17.0"
+url = "https://guoyongzhang.github.io/github.io/v0.17.0"

@@ -1,0 +1,17 @@
+# Verrazzano "local" site configuration (adds to or overides "_default")
+
+[[params.versions]]
+version = "latest"
+url = "https://local/"
+
+[[params.versions]]
+version = "v0.17.2"
+url = "https://local/v0.17.2"
+
+[[params.versions]]
+version = "v0.17.1"
+url = "https://local/v0.17.1"
+
+[[params.versions]]
+version = "v0.17.0"
+url = "https://local/v0.17.0"
