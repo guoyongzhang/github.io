@@ -31,13 +31,17 @@ anchor = "smart"
 
 [[params.versions]]
   version = "latest"
-  url = "https://guoyongzhang.github.io/github.io"
+  url = ""
+
+[[params.versions]]
+  version = "v0.17.2"
+  url = "v0.17.2"
 
 [[params.versions]]
   version = "v0.17.1"
-  url = "https://guoyongzhang.github.io/github.io/v0.17.1"
+  url = "v0.17.1"
 
 [[params.versions]]
   version = "v0.17.0"
-  url = "https://guoyongzhang.github.io/github.io/v0.17.0"
+  url = "v0.17.0"
 

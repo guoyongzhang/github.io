@@ -1,6 +1,6 @@
 # Verrazzano "production" site configuration (adds to or overides "_default")
 
-baseURL = "https://guoyongzhang.github.io/"
+baseURL = ""
 
 [services]
 [services.googleAnalytics]
