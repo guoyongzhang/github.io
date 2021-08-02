@@ -1,10 +1,2 @@
 # Verrazzano "local" Site Params (adds to (or can override) Site "config/_default")
 # Use for local content testing
-
-[[versions]]
-version = "latest"
-url = "https://localhost:1313/"
-
-[[versions]]
-version = "v0.17.0"
-url = "https://localhost:1313/v0.17/"

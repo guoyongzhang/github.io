@@ -3,8 +3,8 @@
 
 [[versions]]
 version = "latest"
-url = "https://another/"
+url = "https://another/latest/docs/"
 
 [[versions]]
 version = "v0.17.0"
-url = "https://another/v0.17/"
+url = "https://another/v0.17/docs/"
