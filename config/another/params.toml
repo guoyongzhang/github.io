@@ -6,13 +6,5 @@ version = "latest"
 url = "https://another/"
 
 [[versions]]
-version = "v0.17.2"
-url = "https://another/v0.17.2"
-
-[[versions]]
-version = "v0.17.1"
-url = "https://another/v0.17.1"
-
-[[versions]]
 version = "v0.17.0"
-url = "https://another/v0.17.0"
+url = "https://another/v0.17"
