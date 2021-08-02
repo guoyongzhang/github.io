@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Verrazzano"
-linkTitle: "Documentation"
+linkTitle: "Documentation v1.0"
 weight: 20
 menu:
   main:
@@ -10,4 +10,4 @@ no_list: true
 
 
 
-Index Page for v0.17.3
+Index Page for v1.0
