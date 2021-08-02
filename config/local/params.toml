@@ -7,4 +7,4 @@ url = "https://localhost:1313/"
 
 [[versions]]
 version = "v0.17.0"
-url = "https://localhost:1313/v0.17"
+url = "https://localhost:1313/v0.17/"
