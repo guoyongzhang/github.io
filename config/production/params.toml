@@ -6,5 +6,5 @@ version = "latest"
 url = "https://guoyongzhang.github.io/github.io/latest/docs/"
 
 [[versions]]
-version = "v0.17"
-url = "https://guoyongzhang.github.io/github.io/v0.17/docs/"
+version = "v1.0"
+url = "https://guoyongzhang.github.io/github.io/v1.0/docs/"
