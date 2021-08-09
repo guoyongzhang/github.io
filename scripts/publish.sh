@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-PUBLISH_BRANCH=pages
+PUBLISH_BRANCH=gh-pages
 RELEASE_BRANCH=$1
 LATEST_VERSION=$2
 
