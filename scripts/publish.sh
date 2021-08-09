@@ -1,36 +1,28 @@
 #!/bin/bash
 
-VERSION=${1:-"latest"}
-echo "publishing $VERSION"
+set -e
+PUBLISH_BRANCH=gh-pages
+RELEASE_BRANCH=$1
+LATEST_VERSION=$2
 
 function ensureRoot() {
-    rm -rf gh-root
-    mkdir gh-root
-
-    touch gh-root/CNAME
-    cat << EOF > gh-root/index.html
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Redirecting</title>
-	<noscript>
-		<meta http-equiv="refresh" content="1; url=latest/" />
-	</noscript>
-	<script>
-		window.location.replace(window.location.href+"latest/");
-	</script>
-</head>
-<body>
-Redirecting to <a href="latest/">latest/</a>...
-</body>
-</html>
-EOF
-
-    gh-pages -b gh-pages -d gh-root -a
-
-    rm -rf gh-root
+    /usr/bin/gh-pages -b ${PUBLISH_BRANCH} -d hack -a
 }
 
-hugo --source . --environment production --destination production
-gh-pages -b gh-pages -d production -e $VERSION
-ensureRoot
+if [[ ${RELEASE_BRANCH} == release-* ]]; then
+  VERSION=v${RELEASE_BRANCH:8}
+  echo "publish ${VERSION}"
+  /usr/bin/gh-pages -d production -b ${PUBLISH_BRANCH} -e "${VERSION}"
+  if [[ "true" == "${LATEST_VERSION}" ]]; then
+    echo "publish ${VERSION} as the latest"
+    /usr/bin/gh-pages -d production -b ${PUBLISH_BRANCH} -e latest
+  fi
+  ensureRoot
+elif [[ ${RELEASE_BRANCH} == master ]]; then
+  echo "publish master as devel"
+  /usr/bin/gh-pages -d production -b ${PUBLISH_BRANCH} -e devel
+  ensureRoot
+else
+  echo "${RELEASE_BRANCH} is not a release branch.  Can not publish."
+  exit 1
+fi
